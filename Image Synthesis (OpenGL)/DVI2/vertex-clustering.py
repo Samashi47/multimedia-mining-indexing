@@ -136,8 +136,8 @@ def main():
         print("Usage: python script.py <mesh_file>")
         sys.exit(1)
 
-    filename = "input-models/" + sys.argv[1]
-    outfile = "DVI/output-models/" + sys.argv[1]
+    filename = "Image Synthesis (OpenGL)/DVI2/input-models/" + sys.argv[1]
+    outfile = "Image Synthesis (OpenGL)/DVI2/output-models/" + sys.argv[1]
     d = float(input("Enter percentage of the scene for the grid cell length: "))
 
     mesh = read_obj(filename)
