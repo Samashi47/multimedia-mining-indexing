@@ -169,3 +169,13 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# LaTeX Aux
+*.tex
+*.aux
+*.out
+*.synctex.gz
+
+# PyOpenGL / PyOpenGL-accelerate
+
+pyopengl/
