@@ -14,14 +14,7 @@ control_points = [
 
 current_point = [0, 0]  
 step = 0.1  
-sign = 1    
-
-def init():
-    glClearColor(1.0, 1.0, 1.0, 1.0)
-    glEnable(GL_DEPTH_TEST)
-    glEnable(GL_LIGHTING)
-    glEnable(GL_LIGHT0)
-    glLightfv(GL_LIGHT0, GL_POSITION, [1.0, 1.0, 1.0, 0.0])
+sign = 1
 
 def draw_control_points():
     glPointSize(5.0)
@@ -136,8 +129,6 @@ def main():
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH)
     glutInitWindowSize(800, 600)
     glutCreateWindow(b"Bezier Surface Control")
-    
-    init()
     
     glutDisplayFunc(display)
     glutReshapeFunc(reshape)
